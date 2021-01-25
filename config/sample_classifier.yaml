@@ -1,0 +1,17 @@
+data:
+  train:
+    dataset: datasets/classification/train/
+  val:
+    dataset: datasets/classification/val/
+  input_size: [224,224]
+
+pipeline:
+  batch_size: 25
+  learning_rate: 1e-4
+  n_workers: 8
+  n_epochs: 30
+  warmup: False
+  save_all: False
+  save_prefix: "sample_network"
+  device: cuda
+#  weights: LOAD_WEIGHTS_PATH
